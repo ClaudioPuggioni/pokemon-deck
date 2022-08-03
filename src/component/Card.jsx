@@ -19,10 +19,10 @@ const Card = ({ url }) => {
           <div className="dexNum">{pokemon.id}</div>
           <div className="name">{pokemon.name}</div>
           <div className="imageDiv">
-            <img className="pokeImg" src={pokemon.sprites[`front_default`]} alt="" />
+            <img className="pokeImg" src={pokemon.sprites.other["official-artwork"].front_default} alt="" />
             <div className="type">
               {pokemon.types.map((ele) => (
-                <div>{ele.type.name}</div>
+                <div className={ele.type.name}>{ele.type.name}</div>
               ))}
             </div>
           </div>
