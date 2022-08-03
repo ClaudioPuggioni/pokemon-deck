@@ -1,0 +1,133 @@
+.mainContainer {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+}
+.mainContainer:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+
+  background-image: url("/public/assets/pokewall.jpg");
+  background-repeat: repeat;
+  opacity: 7%;
+  z-index: -1;
+  filter: grayscale(100%);
+}
+
+.mainHeader {
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffcb03;
+  font-size: 55px;
+  font-weight: 900;
+  text-shadow: 1px 1px 13px #3d7dca;
+  background-color: #003a70;
+}
+
+.listContainer {
+  padding: 40px 100px;
+}
+.listHeader {
+  font-size: 27px;
+  font-weight: 800;
+  padding-bottom: 30px;
+}
+.list {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  padding: 7px 12px;
+  border: 0.001px solid black;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.36);
+  background-color: white;
+}
+.name {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.imageDiv {
+}
+.type {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.bug {
+  color: #a8b820;
+}
+.dark {
+  color: #705848;
+}
+.dragon {
+  color: #7038f8;
+}
+.electric {
+  color: #f8d030;
+}
+.fairy {
+  color: #f8a0e0;
+}
+.fighting {
+  color: #903028;
+}
+.fire {
+  color: #f05030;
+}
+.flying {
+  color: #a890f0;
+}
+.ghost {
+  color: #705898;
+}
+.grass {
+  color: #78c850;
+}
+.ground {
+  color: #e0c068;
+}
+.ice {
+  color: #98d8d8;
+}
+.normal {
+  color: #a8a878;
+}
+.poison {
+  color: #a040a0;
+}
+.psychic {
+  color: #f85888;
+}
+.rock {
+  color: #b8a038;
+}
+.shadow {
+  color: #403246;
+}
+.steel {
+  color: #403246;
+}
+.unknown {
+  color: #68a090;
+}
+.water {
+  color: #6890f0;
+}
