@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 const Card = ({ url }) => {
   const [pokemon, setPokemon] = useState(null);
-  const [typeData, setTypeData] = useState(null);
 
   useEffect(() => {
     fetch(url)
@@ -10,6 +9,7 @@ const Card = ({ url }) => {
       .then((data) => {
         setPokemon(data);
       });
+    // eslint-disable-next-line
   }, []);
 
   return (

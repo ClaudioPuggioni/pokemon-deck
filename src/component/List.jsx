@@ -8,6 +8,7 @@ const List = (props) => {
     fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
       .then((resp) => resp.json())
       .then((data) => setAllPokemons(data.results));
+    // eslint-disable-next-line
   }, []);
 
   return (
