@@ -1,19 +1,21 @@
-.mainContainer {
+#mainContainer {
   position: relative;
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.mainContainer:before {
+#mainContainer:before {
   content: " ";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 
   background-image: url("/public/assets/pokewall.jpg");
   background-repeat: repeat;
@@ -22,25 +24,31 @@
   filter: grayscale(100%);
 }
 
-.mainHeader {
-  padding-left: 10px;
-  height: 155px;
+#mainHeader {
+  height: 270px;
   width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  color: #ffcb03;
+  /* color: #ffcb03;
   font-size: 55px;
   font-weight: 900;
-  text-shadow: 1px 1px 13px #3d7dca;
+  text-shadow: 1px 1px 13px #3d7dca; */
   background-color: #003a70;
+}
+#pokeLogo {
+  width: 100%;
+  max-width: 490px;
+  padding: 0px 10px;
 }
 
 .listContainer {
   height: 100%;
-  width: 80%;
+  width: auto;
+  max-width: 80%;
+  padding-bottom: 50px;
 
   display: flex;
   flex-direction: column;
@@ -55,9 +63,9 @@
 }
 .list {
   height: 100%;
-  width: 100%;
 
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
 }

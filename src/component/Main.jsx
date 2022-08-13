@@ -4,8 +4,10 @@ import List from "./List";
 
 export default function Main() {
   return (
-    <div className="mainContainer">
-      <div className="mainHeader">Pokemon: Gotta Catch 'em all!</div>
+    <div id="mainContainer">
+      <div id="mainHeader">
+        <img id="pokeLogo" src="/assets/pokemonLogo.svg" alt="pokemon logo" />
+      </div>
       <List />
     </div>
   );
